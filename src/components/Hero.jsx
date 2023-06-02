@@ -27,7 +27,7 @@ const Hero = () => {
                           id="name"
                           name="name"
                           className="py-2 px-4 block w-full shadow-sm rounded-md focus:z-10 focus:border-blue-500 focus:ring-blue-500 ring-1 transition duration-300 bg-slate-900 border-gray-700 text-gray-400"
-                          placeholder="Jim Halpert"
+                          placeholder="Jon Doe"
                         />
                       </div>
                       <div className="w-full">
@@ -36,14 +36,14 @@ const Hero = () => {
                           id="email"
                           name="email"
                           className="py-2 px-4 block w-full shadow-sm rounded-md focus:z-10 focus:border-blue-500 focus:ring-blue-500 ring-1 transition duration-300 bg-slate-900 border-gray-700 text-gray-400"
-                          placeholder="jim@dundermifflin.com"
+                          placeholder="sample@email.com"
                         />
                       </div>
                       <button
                         className="w-full sm:w-auto whitespace-nowrap inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 transition duration-300 border border-transparent text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-2 px-4 "
                         type="submit"
                       >
-                        Subscribe
+                        Free Ticket
                       </button>
                     </div>
                     <p className="mt-3 text-sm text-gray-400 tracking-tight">

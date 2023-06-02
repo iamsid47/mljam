@@ -61,7 +61,7 @@ export default function NavBar() {
                 <a href="/">Itinerary</a>
               </li>
               <li className="text-gray-50 hover:text-blue-600 transition duration-300">
-                <a href="/">Sponsors</a>
+                <a href="/sponsors">Sponsors</a>
               </li>
               <li className="text-gray-50 hover:text-blue-600 transition duration-300">
                 <a href="/contact">Contact</a>
