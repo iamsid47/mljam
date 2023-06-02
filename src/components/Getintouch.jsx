@@ -70,6 +70,10 @@ const Getintouch = () => {
               Send Message
             </button>
           </form>
+          <p className="text-xs py-4 text-gray-400">
+            By clicking the send message button, you agree to our terms and
+            privacy.
+          </p>
         </div>
       </section>
       <Footer />
