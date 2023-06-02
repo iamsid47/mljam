@@ -1,89 +1,83 @@
-import React from "react";
+import { useState } from "react";
+import mljam from "../components/assets/mljam.svg";
 
-const Navbar = () => {
+export default function NavBar() {
+  const [navbar, setNavbar] = useState(false);
+
   return (
-    <section>
-      <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full border-b border-gray-200 text-sm py-3 sm:py-0 text-gray-50 bg-gray-950">
-        <nav
-          class="relative max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
-          aria-label="Global"
-        >
-          <div class="flex items-center justify-between">
-            <a
-              class="flex-none text-3xl font-semibold tracking-tight"
-              href="/"
-              aria-label="mljam"
-            >
-              mljam
+    <nav className="w-full bg-gray-950 shadow">
+      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <div>
+          <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <a href="/">
+              <img src={mljam} alt="mljam logo" className="w-1/4 shadow-md" />
             </a>
-            <div class="sm:hidden">
+            <div className="md:hidden">
               <button
-                type="button"
-                class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white  shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm "
-                data-hs-collapse="#navbar-collapse-with-animation"
-                aria-controls="navbar-collapse-with-animation"
-                aria-label="Toggle navigation"
+                className="p-2  rounded-md outline-none transition duration-300"
+                onClick={() => setNavbar(!navbar)}
               >
-                <svg
-                  class="hs-collapse-open:hidden w-4 h-4"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                  />
-                </svg>
-                <svg
-                  class="hs-collapse-open:block hidden w-4 h-4"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                </svg>
+                {navbar ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6 text-gray-50 transition duration-300"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6 text-gray-50 transition duration-300"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                )}
               </button>
             </div>
           </div>
+        </div>
+        <div>
           <div
-            id="navbar-collapse-with-animation"
-            class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
+            className={`flex-1 justify-self-center pb-8 mt-1 md:block md:pb-0 md:mt-0 ${
+              navbar ? "block" : "hidden"
+            }`}
           >
-            <div class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7">
-              <a
-                class="font-medium hover:text-blue-500 transition duration-200 sm:py-6 "
-                href="/"
-              >
-                Iternery
-              </a>
-              <a
-                class="font-medium hover:text-blue-500 transition duration-200 sm:py-6 "
-                href="/"
-              >
-                Sponsors
-              </a>
-              <a
-                class="font-medium hover:text-blue-500 transition duration-200 sm:py-6 "
-                href="/"
-              >
-                Contact
-              </a>
-
-              <a
-                class="flex items-center gap-x-2 font-medium  hover:text-blue-500 transition duration-200 sm:border-l sm:border-gray-300 sm:my-6 sm:pl-6 "
-                href="/"
-              >
-                Book Tickets
-              </a>
-            </div>
+            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              <li className="text-gray-50 hover:text-blue-600 transition duration-300">
+                <a href="/">Itinerary</a>
+              </li>
+              <li className="text-gray-50 hover:text-blue-600 transition duration-300">
+                <a href="/">Sponsors</a>
+              </li>
+              <li className="text-gray-50 hover:text-blue-600 transition duration-300">
+                <a href="/contact">Contact</a>
+              </li>
+              <li className="text-gray-50 hover:text-blue-600 transition duration-300">
+                <button
+                  className="w-full sm:w-auto whitespace-nowrap inline-flex justify-center items-center gap-x-3 text-center bg-gray-600 hover:bg-gray-700 transition duration-300 border border-transparent text-gray-300 font-medium rounded-md focus:outline-none md:mx-2 py-2 px-4 mx-0 "
+                  type="submit"
+                >
+                  Book Tickets
+                </button>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
-    </section>
+        </div>
+      </div>
+    </nav>
   );
-};
-
-export default Navbar;
+}
