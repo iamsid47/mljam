@@ -9,12 +9,12 @@ const Sponsors = () => {
       <section className="py-24 lg:pb-36 bg-gradient-to-tr from-slate-900 via-gray-800 to-gray-950 overflow-hidden text-gray-50">
         <div className="container px-4 mx-auto">
           <div className="max-w-xl text-center mx-auto mb-20">
-            <p className="text-7xl font-semibold uppercase text-center">
+            <p className="text-4xl lg:text-7xl font-semibold uppercase text-center">
               Sponsors
             </p>
           </div>
           <div className="max-w-2xl mx-auto mb-16">
-            <div className="grid grid-cols-3 justify-center md:space-x-4 md:space-y-4 space-y-2 space-x-2 items-center">
+            <div className="grid grid-cols-3 justify-center md:space-x-4 md:space-y-4 items-center">
               <div className="w-auto p-8 m-4">
                 <img
                   src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-ztos.png"
@@ -42,7 +42,7 @@ const Sponsors = () => {
               </div>
               <div className="w-auto p-8 m-4 mx-auto col-span-2 border border-gray-50 rounded-3xl shadow-lg">
                 <div>
-                  <h1 className="text-3xl">
+                  <h1 className="text-xl lg:text-3xl">
                     Thanks to our sponsors to make this happen!
                   </h1>
                   <a
