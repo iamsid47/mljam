@@ -9,22 +9,21 @@ const Sponsors = () => {
       <section className="py-24 lg:pb-36 bg-gradient-to-tr from-slate-900 via-gray-800 to-gray-950 overflow-hidden text-gray-50">
         <div className="container px-4 mx-auto">
           <div className="max-w-xl text-center mx-auto mb-12">
-            <p className="text-4xl lg:text-7xl font-semibold uppercase text-center">
+            <p className="text-4xl lg:text-7xl font-bold uppercase text-center bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-700 bg-clip-text text-transparent">
               Sponsors
             </p>
           </div>
           <div className="max-w-2xl mx-auto mb-16">
             <div className="grid grid-cols-3 justify-center md:space-x-4 md:space-y-4 items-center">
-              <div className="w-auto p-4 md:p-8 m-4">
+              <div className="w-auto p-4 md:p-8 m-4 mx-auto ">
                 <img
-                  src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-ztos.png"
+                  src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-muzica.png"
                   alt=""
-                  className="w-2/3 mx-auto"
                 />
               </div>
               <div className="w-auto p-4 md:p-8 m-4 mx-auto">
                 <img
-                  src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-muzica.png"
+                  src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-light-ai.png"
                   alt=""
                 />
               </div>
@@ -72,10 +71,11 @@ const Sponsors = () => {
                   alt=""
                 />
               </div>
-              <div className="w-auto p-4 md:p-8 m-4 mx-auto">
+              <div className="w-auto p-4 md:p-8 m-4">
                 <img
-                  src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-light-ai.png"
+                  src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-ztos.png"
                   alt=""
+                  className="w-2/3 mx-auto"
                 />
               </div>
               <div className="w-auto p-4 md:p-8 m-4 mx-auto">
