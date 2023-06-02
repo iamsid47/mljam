@@ -3,11 +3,11 @@ import React from "react";
 const Footer = () => {
   return (
     <section className="bg-gray-950">
-      <footer class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
-        <div class="text-center">
+      <footer className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+        <div className="text-center">
           <div>
             <a
-              class="flex-none text-2xl font-semibold text-gray-50 "
+              className="flex justify-center text-2xl font-semibold text-gray-50 "
               href="/"
               aria-label="mljam"
             >
@@ -15,29 +15,44 @@ const Footer = () => {
             </a>
           </div>
 
-          <div class="mt-3 text-sm">
-            <p class="text-gray-500">
+          <div className="py-4 flex space-x-4 text-gray-50 justify-center items-center">
+            <a
+              href="/"
+              className="text-gray-400 hover:text-gray-200 transition duration-200"
+            >
+              Terms
+            </a>
+            <a
+              href="/"
+              className="text-gray-400 hover:text-gray-200 transition duration-200"
+            >
+              Privacy
+            </a>
+          </div>
+
+          <div className="mt-3 text-sm">
+            <p className="text-gray-500">
               We're part of the{" "}
               <a
-                class="font-semibold text-blue-200 hover:text-blue-700  "
+                className="font-semibold text-blue-200 hover:text-blue-700  "
                 href="https://kulthe.com"
               >
                 Kulthe Media
               </a>{" "}
               family.
             </p>
-            <p class="text-gray-500">
-              © 2023, Kulthe Media, Limited. All rights reserved.
+            <p className="text-gray-500">
+              © 2023, MLJAM, Limited. All rights reserved.
             </p>
           </div>
 
-          <div class="mt-3 space-x-2">
+          <div className="mt-3 space-x-2">
             <a
-              class="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition "
+              className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition "
               href="/"
             >
               <svg
-                class="w-3.5 h-3.5"
+                className="w-3.5 h-3.5"
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
@@ -48,11 +63,11 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              class="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition "
+              className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition "
               href="/"
             >
               <svg
-                class="w-3.5 h-3.5"
+                className="w-3.5 h-3.5"
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
@@ -63,11 +78,11 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              class="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition "
+              className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition "
               href="/"
             >
               <svg
-                class="w-3.5 h-3.5"
+                className="w-3.5 h-3.5"
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
@@ -78,11 +93,11 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              class="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition "
+              className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition "
               href="/"
             >
               <svg
-                class="w-3.5 h-3.5"
+                className="w-3.5 h-3.5"
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"

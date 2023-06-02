@@ -27,7 +27,7 @@ const Hero = () => {
                           id="name"
                           name="name"
                           className="py-2 px-4 block w-full shadow-sm rounded-md focus:z-10 focus:border-blue-500 focus:ring-blue-500 ring-1 transition duration-300 bg-slate-900 border-gray-700 text-gray-400"
-                          placeholder="Jim Halper"
+                          placeholder="Jim Halpert"
                         />
                       </div>
                       <div className="w-full">
