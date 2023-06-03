@@ -3,8 +3,8 @@ import React from "react";
 const Hero = () => {
   return (
     <section>
-      <div className="tracking-tighter">
-        <section className="relative pt-12 overflow-hidden bg-gradient-to-tr from-slate-900 via-gray-800 to-gray-950 sm:pt-16">
+      <div className="">
+        <section className="relative pt-12 overflow-hidden sm:pt-16">
           <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-4xl mx-auto text-center">
               <p className="text-sm font-thin tracking-wide uppercase">

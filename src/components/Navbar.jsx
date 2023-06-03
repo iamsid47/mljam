@@ -5,7 +5,7 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full bg-gray-950 shadow">
+    <nav className="w-full bg-gray-950 shadow tracking-normal">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="inline-flex items-center justify-between py-3 md:py-2 md:block">
